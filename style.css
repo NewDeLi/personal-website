@@ -25,6 +25,7 @@ nav h1{
   align-items: center;
   flex-grow: 1;
   padding-left: 10px;
+  font-size: 35px;
 }
 #red{
   color: rgba(110, 20, 20, 0.753);
@@ -64,34 +65,38 @@ header {
   grid-template-rows: 1fr  2fr;
   grid-template-columns: 1fr 2fr 1fr;
   grid-auto-flow: dense;
-}
-.interestsh3{
-  grid-row: 1;
-  grid-column: 1;
-  justify-self: center;
+  font-size: 25px;
 }
 .interestsul{
-  grid-row: 2;
+  grid-row: 1/ span  2;
   grid-column: 1;
   list-style-type: none;
   margin-right: 35px;
 }
-.skillsh3{
-  grid-row: 1;
-  grid-column: 3;
-  justify-self: center;
+#likedeli{
+  color: white;
+  background-color:rgba(13, 48, 80, 0.575);
 }
 .skillsul{
-  grid-row: 2;
+  grid-row: 1/span 2;
   grid-column: 3;
   list-style-type: none;
   margin-right: 35px;
+}
+#likenew{
+  color: white;
+  background-color: rgba(110, 20, 20, 0.753);;
+}
+.skillsul li{
+   background-color:rgba(13, 48, 80, 0.575);
+}
+.interestsul li{
+  background-color: rgba(110, 20, 20, 0.753)
 }
 header li{
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  background-color:rgba(13, 48, 80, 0.575);
-  color: rgba(110, 20, 20, 0.753);
+  color: white;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   padding: 5px;
   margin: 5px 0;
@@ -133,7 +138,7 @@ address img{
   box-shadow: white;
 }
 
-/*section*/
+/*socials-section*/
 section{
   display: block;
   margin: auto 0;
@@ -170,9 +175,14 @@ container {
   left: 8px;
   top: 12px;
   border-radius: 0px;
-section a {
-  color: rgba(0, 0, 0, 0.05)
-} 
+}
+
+/*bigraphy and cv*/
+.bio{
+ 
+}
+.cv{
+  
 }
 
 /*footer*/
