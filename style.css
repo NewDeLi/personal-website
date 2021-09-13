@@ -137,6 +137,10 @@ address img {
   border-radius: 50px;
   box-shadow: white;
 }
+address a{
+  position:relative;
+  bottom: 100px;
+}
 
 /*socials-section*/
 section {
@@ -212,6 +216,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+}
+main a{
+  position:relative;
+  bottom: 100px;
 }
 aside {
   display: flex;
