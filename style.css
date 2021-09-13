@@ -1,5 +1,5 @@
 body {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -20,38 +20,38 @@ nav {
   border-bottom: rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
-nav h1{
+nav h1 {
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 10px;
   font-size: 35px;
 }
-#red{
+#red {
   color: rgba(110, 20, 20, 0.753);
 }
-#blue{
-  color:rgba(13, 48, 80, 0.575)
+#blue {
+  color: rgba(13, 48, 80, 0.575);
 }
-nav ul{
+nav ul {
   display: inline-flex;
   list-style-type: none;
   gap: 20px;
   padding-right: 10px;
 }
-nav li :hover{
+nav li :hover {
   color: rgb(158, 50, 50);
 }
-nav h1 :hover{
+nav h1 :hover {
   color: rgb(158, 50, 50);
 }
 
 /*header*/
-header img{
+header img {
   display: inline-block;
   margin: auto;
   width: 100%;
-  border: 1px solid  rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
 header {
@@ -60,40 +60,41 @@ header {
   justify-content: center;
   align-items: center;
 }
-.infoboxes{
+.infoboxes {
   display: grid;
-  grid-template-rows: 1fr  2fr;
+  grid-template-rows: 1fr 2fr;
   grid-template-columns: 1fr 2fr 1fr;
   grid-auto-flow: dense;
   font-size: 25px;
 }
-.interestsul{
-  grid-row: 1/ span  2;
+.interestsul {
+  grid-row: 1 / span 2;
   grid-column: 1;
   list-style-type: none;
   margin-right: 35px;
 }
-#likedeli{
+#likedeli {
   color: white;
-  background-color:rgba(13, 48, 80, 0.575);
+  background-color: rgba(13, 48, 80, 0.575);
+  font-weight: bolder;
 }
-.skillsul{
-  grid-row: 1/span 2;
+.skillsul {
+  grid-row: 1 / span 2;
   grid-column: 3;
   list-style-type: none;
   margin-right: 35px;
 }
-#likenew{
-  color: white;
-  background-color: rgba(110, 20, 20, 0.753);;
+#likenew {
+  background-color: rgba(110, 20, 20, 0.753);
+  font-weight: bolder;
 }
-.skillsul li{
-   background-color:rgba(13, 48, 80, 0.575);
+.skillsul li {
+  background-color: rgba(13, 48, 80, 0.575);
 }
-.interestsul li{
-  background-color: rgba(110, 20, 20, 0.753)
+.interestsul li {
+  background-color: rgba(110, 20, 20, 0.753);
 }
-header li{
+header li {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   color: white;
@@ -101,15 +102,14 @@ header li{
   padding: 5px;
   margin: 5px 0;
 }
-header h3{
-  border: 1px solid ;
+header h3 {
+  border: 1px solid;
   border-radius: 5px;
-  color:rgba(13, 48, 80, 0.575);
+  color: rgba(13, 48, 80, 0.575);
   background-color: rgba(110, 20, 20, 0.753);
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   padding: 5px;
   font-weight: bolder;
-  
 }
 /*contact*/
 address {
@@ -124,14 +124,14 @@ address {
   font-style: normal;
   background-color: white;
 }
-address aside{
+address aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto 0;
 }
-address img{
+address img {
   width: 25%;
   margin: 30px 0;
   border-radius: 50px;
@@ -139,61 +139,94 @@ address img{
 }
 
 /*socials-section*/
-section{
+section {
   display: block;
   margin: auto 0;
 }
 container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  height: 160px;
+  width: 343px;
+  left: 16px;
+  top: 16px;
   padding: 16px;
-  position: static;
-  width: 344px;
-  height: 283px;
-  left: 0px;
-  top: 0px;
   background: #ffffff;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
   margin: 24px auto;
 }
-.git img {
+container aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 14px;
+  margin-right: 16px;
+  height: 128px;
+}
+container img {
   height: 128px;
   width: 128px;
-  left: 0px;
-  top: 0px;
+  left: 16px;
+  top: 16px;
   border-radius: 8px;
 }
-.follow img {
-  height: 0px;
-  width: 8px;
-  left: 8px;
-  top: 12px;
+aside h3 {
+  margin: 16px 0 8px 0;
+}
+.followme {
+  display: flex;
+  margin-top: 42px;
+}
+aside img {
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  top: 2px;
   border-radius: 0px;
+}
+aside a {
+  flex-grow: 1;
+  color: rgba(0, 0, 0, 0.05);
+}
+aside p :hover {
+  color: rgb(158, 50, 50);
 }
 
 /*bigraphy and cv*/
-.bio{
- 
+article {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  display: flex;
 }
-.cv{
-  
+main {
+  width: 60%;
+  margin: 16px;
+  padding: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
 }
 
 /*footer*/
 footer {
   display: flex;
-  background-color: white;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
 }
 
 .copy {
   flex-grow: 1;
-  margin: auto 5px
+  margin: auto 5px;
 }
