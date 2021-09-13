@@ -202,7 +202,6 @@ aside p :hover {
 
 /*bigraphy and cv*/
 article {
-  background-color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   padding: 16px;
@@ -212,7 +211,7 @@ main {
   width: 60%;
   margin: 16px;
   padding: 5px;
-  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -229,6 +228,7 @@ aside {
 
 /*footer*/
 footer {
+  background-color: white;
   display: flex;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
