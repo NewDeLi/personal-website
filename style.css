@@ -1,10 +1,13 @@
-html{
-  font-size:18px;
+html {
+  font-size: 18px;
 }
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
   background-color: rgba(0, 0, 0, 0.05);
+  padding: 0;
+  margin: 0;
 }
+
 @media screen and (min-width: 400px) {
   html {
     font-size: 20px;
@@ -24,9 +27,7 @@ nav {
   top: 0;
   z-index: 1;
   background-color: white;
-  margin-bottom: 10px;
   border-bottom: rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
 }
 nav h1 {
   display: flex;
@@ -54,75 +55,60 @@ nav h1 :hover {
   color: #9e3232;
 }
 /*hero*/
-.hero {
+header {
   color: #ffffff;
   background-image: url("./images/website-hero-mobile@2x.png");
-  background-size: 100vw 90vw;
-  background-position: bottom;
+  background-size: 100% 100%;
+  height: 90vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.hero {
+  font-size: 18px;
+  margin-top: 350px;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-}
-.hero main {
-  font-size: 18px;
-  margin-top: 160px;
 }
 .hero h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 0.1em;
+  align-self: flex-start;
 }
 .hero p {
-  margin-top: 32px;
+  align-self: flex-start;
 }
-@media (orientation: landscape){
-  .hero {
-    color: white;
+@media (orientation: landscape) {
+  header {
     background-image: url("./images/website-hero-desktop@2x.png");
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-size: 100vw 90vh;
-    background-position: bottom;
-  }
-  .hero main {
-    font-size: 32px;
-    margin-top: 440px;
   }
   .hero h2 {
     font-size: 2em;
-    letter-spacing: 0.1em;
-    margin-bottom: 0px;
-  }
-  .hero p {
-    margin-top: 32px;
   }
 }
-
-/*header
-header img {
-  width: 100%;
+/*skills + interests+contact*/
+.infoboxes li {
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-}*/
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: white;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  margin: 5px 0;
+  background-color: white;
+  color: black;
 }
 .infoboxes {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: dense;
   font-size: 1.25rem;
   width: 100%;
+  margin: 6rem auto;
 }
-.interestsul {
+.interestList {
   grid-row: 1 / span 2;
   grid-column: 1;
   list-style-type: none;
@@ -130,146 +116,81 @@ header {
 }
 #likedeli {
   color: white;
-  background-color: rgba(13, 48, 80, 0.575);
+  background-color: rgba(110, 20, 20, 0.753);
   font-weight: bolder;
 }
-.skillsul {
+.skillsList {
   grid-row: 1 / span 2;
   grid-column: 3;
   list-style-type: none;
   margin-right: 35px;
 }
 #likenew {
-  background-color: rgba(110, 20, 20, 0.753);
+  color: white;
+  background-color: rgba(13, 48, 80, 0.575);
   font-weight: bolder;
 }
-.skillsul li {
-  background-color: rgba(13, 48, 80, 0.575);
-}
-.interestsul li {
-  background-color: rgba(110, 20, 20, 0.753);
-}
-header li {
-  border: 1px solid rgba(0, 0, 0, 0.05);
+.contact {
+  grid-row: 1 / span 2;
+  grid-column: 2;
   border-radius: 5px;
-  color: white;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-  padding: 5px;
-  margin: 5px 0;
-}
-/*contact*/
-address {
   display: flex;
+  gap: 8px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   border: solid 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-  margin: 20px auto;
-  font-style: normal;
   background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
-address aside {
+*/ .contact aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: auto 0;
+  flex-grow: 1;
+  height: 128px;
+  width: 100%;
 }
-address img {
-  max-width: 25%;
-  margin: 30px 0;
-  border-radius: 50px;
-  box-shadow: white;
+.contact img {
+  height: 128px;
+  width: 128px;
+  left: 16px;
+  top: 16px;
+  border-radius: 8px;
 }
-address a {
+#go2contact {
   position: relative;
-  bottom: 100px;
+  bottom: 9rem;
 }
 
 /*socials-section*/
-section {
-  display: block;
-  margin: auto 0;
-}
-container {
+.socials {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 24px;
-  height: 160px;
-  left: 16px;
-  top: 16px;
-  padding: 16px;
-  background: #ffffff;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
-  margin: 24px auto;
-}
-container aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  font-size: 0.8rem;
-  height: 128px;
-  width: 100%;
-}
-container img {
-  height: 128px;
-  width: 128px;
-  left: 16px;
-  top: 16px;
-  border-radius: 8px;
-}
-aside h3 {
-  margin: 16px 0 8px 0;
-}
-.followme {
-  display: flex;
-  margin-top: 42px;
-}
-aside img {
-  height: 20px;
-  width: 20px;
-  left: 2px;
-  top: 2px;
-  border-radius: 0px;
-}
-aside a {
-  flex-grow: 1;
-  color: rgba(0, 0, 0, 0.05);
-}
-aside p :hover {
-  color: rgb(158, 50, 50);
-}
-@media screen and (min-width: 400px){
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  margin: 6rem 0;
+}
+#go2socials {
+  position: relative;
+  bottom: 10.5rem;
 }
 container {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 24px;
   height: 160px;
-  left: 16px;
-  top: 16px;
+  max-width: 250px;
   padding: 16px;
   background: #ffffff;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   border-radius: 16px;
-  margin: 24px auto;
 }
 container aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-grow: 1;
   font-size: 0.8rem;
   height: 128px;
   width: 100%;
@@ -277,8 +198,6 @@ container aside {
 container img {
   height: 128px;
   width: 128px;
-  left: 16px;
-  top: 16px;
   border-radius: 8px;
 }
 aside h3 {
@@ -296,43 +215,74 @@ aside img {
   border-radius: 0px;
 }
 aside a {
-  flex-grow: 1;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.267);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 aside p :hover {
   color: rgb(158, 50, 50);
-}  
+}
+@media screen and (min-width: 400px) {
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  container {
+    margin: 24px auto;
+  }
 }
 
 /*bigraphy and cv*/
-article {
-  border-radius: 5px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+.biography {
   padding: 16px;
   display: flex;
+  gap: 35px;
+  margin: 6rem 0;
 }
-article main {
-  width: 70%;
+.aboutme {
+  width: 50%;
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  background-color: rgba(13, 48, 80, 0.575);
-  color:white;
   padding: 10px;
   border-radius: 5px;
 }
-main a {
-  position: relative;
-  bottom: 100px;
-}
-article aside {
-  display: flex;
-  flex-direction: column;
+.aboutme h4 {
   background-color: rgba(110, 20, 20, 0.753);
   color: white;
-  padding: 10px;
-  margin: 15px 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+#go2biography {
+  position: relative;
+  bottom: 7rem;
+}
+.cv {
+  width: 50%;
+  min-height: 100vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cv h4 {
+  background-color: rgba(13, 48, 80, 0.575);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
 }
 
 /*footer*/
@@ -340,7 +290,6 @@ footer {
   background-color: white;
   display: flex;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
   padding: 0 5px;
 }
 
